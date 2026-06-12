@@ -157,10 +157,11 @@ export function Contact() {
                 <div className="text-sm font-semibold text-text-primary mb-3">What I&apos;m Looking For</div>
                 <ul className="flex flex-col gap-2">
                   {[
-                    'Senior Frontend / SDE2+ roles',
-                    'React.js or Next.js focused teams',
-                    'Products with real user scale',
+                    'Senior / Lead Frontend Engineer roles',
+                    'React.js 18 or Next.js 14 focused teams',
+                    'Products with real user scale & impact',
                     'Collaborative, growth-oriented culture',
+                    'Teams that value engineering standards',
                   ].map(item => (
                     <li key={item} className="flex items-center gap-2 text-xs text-text-muted">
                       <span className="w-1.5 h-1.5 rounded-full bg-accent-500 flex-shrink-0" />

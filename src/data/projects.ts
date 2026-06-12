@@ -16,38 +16,38 @@ export const projects: Project[] = [
   {
     id: 'react-mobile-share',
     title: 'react-mobile-share',
-    description: 'Open-source NPM package enabling seamless native file sharing on mobile devices.',
+    description: 'Open-source React.js library enabling native mobile file sharing via the Web Share API — downloaded by developers worldwide.',
     longDescription:
-      'A lightweight, zero-dependency React hook that wraps the Web Share API to enable native mobile sharing. Converts Base64 data to Blob/File formats for fast processing and leverages the Navigator Share API for native mobile data transfer. Published on NPM and actively maintained.',
-    technologies: ['React', 'TypeScript', 'Web Share API', 'Blob API'],
-    tags: ['Open Source', 'NPM Package', 'Mobile', 'React'],
-    npm: 'https://npm.io/package/react-mobile-sharet',
-    github: 'https://github.com/ayushigothi',
+      'Designed, developed, and published an open-source React.js library enabling native mobile file sharing via the Web Share API. Implemented Base64 → Blob → File conversion pipeline for efficient binary data handling across image, PDF, and media formats. Integrated the Navigator Web Share API with graceful fallback mechanisms for unsupported browsers. Authored comprehensive documentation, usage examples, and TypeScript type definitions for a developer-friendly API surface.',
+    technologies: ['React.js', 'TypeScript', 'Web Share API', 'Blob API', 'Rollup', 'NPM'],
+    tags: ['Open Source', 'NPM Package', 'Mobile', 'React', 'TypeScript'],
+    npm: 'https://www.npmjs.com/package/react-mobile-share',
+    github: 'https://github.com/Ayushi-g42',
     featured: true,
     highlight: '🌟 Published NPM Package',
   },
   {
     id: 'warely',
-    title: 'Warely',
-    description: 'Large-scale TypeScript platform with Firebase Auth and cross-browser adaptive layouts.',
+    title: 'Warely — Enterprise Web Platform',
+    description: 'Large-scale enterprise platform with TypeScript strict mode, Firebase OTP Auth, and adaptive layouts across 5+ device form factors.',
     longDescription:
-      'A scalable enterprise-grade platform built with TypeScript to ensure maintainability at scale. Features Firebase Authentication with OTP-based mobile verification for secure onboarding, and adaptive layouts that work seamlessly across all major browsers and device sizes.',
-    technologies: ['React', 'TypeScript', 'Firebase', 'OTP Auth', 'Responsive Design'],
-    tags: ['TypeScript', 'Firebase', 'Enterprise', 'React'],
+      'Architected and delivered a large-scale enterprise platform using TypeScript strict mode — improving code reliability, reducing runtime errors, and enabling safer refactoring across a 50K+ line codebase. Integrated Firebase Authentication with OTP-based mobile verification and multi-factor authentication. Ensured cross-browser compatibility and adaptive responsive layouts across 5+ device form factors, reducing platform-specific defects by 40%.',
+    technologies: ['Next.js', 'TypeScript', 'Firebase', 'Material UI', 'REST APIs'],
+    tags: ['TypeScript', 'Firebase', 'Enterprise', 'Next.js'],
     featured: true,
-    highlight: '🔒 Firebase OTP Auth',
+    highlight: '🔒 Firebase OTP + MFA',
   },
   {
     id: 'payment-options',
-    title: 'Payment Options',
-    description: 'Configurable React.js payment UI with 35% better interface responsiveness.',
+    title: 'Payment Options — DASPOS',
+    description: 'Internal payment management system with Vue.js + Node.js + Prisma, reducing redundant API calls by 35%.',
     longDescription:
-      'A highly configurable and extensible React.js payment solution with a well-structured UI architecture. Utilized Axios with optimized request handling for API calls. Achieved a 35% gain in interface responsiveness by implementing state caching and eliminating redundant re-renders.',
-    technologies: ['React', 'Axios', 'JavaScript', 'State Management', 'CSS'],
-    tags: ['React', 'JavaScript', 'API Integration', 'Performance'],
+      'Built a configurable internal payment management system using Vue.js and Vuex, enabling the operations team to manage multiple payment providers through a unified dashboard. Developed backend APIs using Node.js and Prisma for provider configuration and reporting. Implemented Vuex-based centralized state management with modular store design, optimizing data flow and reducing redundant API calls by 35%.',
+    technologies: ['Vue.js', 'TypeScript', 'Node.js', 'Prisma', 'Axios', 'Vuex', 'CSS Modules'],
+    tags: ['Vue.js', 'Node.js', 'TypeScript', 'Full Stack'],
     featured: true,
-    highlight: '⚡ 35% Faster UI',
+    highlight: '⚡ 35% Fewer API Calls',
   },
 ]
 
-export const projectTags = ['All', 'Open Source', 'TypeScript', 'Firebase', 'React', 'Performance', 'NPM Package']
+export const projectTags = ['All', 'Open Source', 'NPM Package', 'TypeScript', 'Firebase', 'React', 'Next.js', 'Vue.js', 'Node.js']

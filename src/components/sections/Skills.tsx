@@ -50,8 +50,9 @@ export function Skills() {
           <SectionHeading
             label="Skills"
             title="My Technical Expertise"
-            subtitle="4.5+ years of hands-on experience across the modern frontend ecosystem."
+            subtitle="5+ years of hands-on experience across the modern frontend ecosystem — from React.js 18 to Vue.js, TypeScript, and testing."
           />
+
         </ScrollReveal>
 
         <StaggerContainer className="grid sm:grid-cols-2 gap-6">

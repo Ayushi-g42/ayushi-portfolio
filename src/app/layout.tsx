@@ -5,29 +5,30 @@ import { Navbar } from '@/components/layout/Navbar'
 import { Footer } from '@/components/layout/Footer'
 
 export const metadata: Metadata = {
-  title: 'Ayushi Gothi | Frontend Developer & React Specialist',
+  title: 'Ayushi Gothi | Senior Frontend Developer — React.js · Next.js · TypeScript',
   description:
-    'UI Specialist with 4.5+ years of expertise building scalable, high-performance React applications. SDE2 at Unlink Technology, open-source contributor, and author of the react-mobile-share NPM package.',
+    'Senior Frontend Developer with 5+ years of experience building scalable, high-performance React.js 18 and Next.js 14 applications. Core Web Vitals optimizer, open-source NPM author (react-mobile-share), and engineering mentor at Unlink Technology.',
   keywords: [
-    'Ayushi Gothi', 'Frontend Developer', 'React Developer', 'Next.js Developer',
-    'TypeScript', 'UI Developer', 'React Specialist', 'Noida', 'India',
-    'SDE2', 'Frontend Engineer', 'Portfolio',
+    'Ayushi Gothi', 'Senior Frontend Developer', 'React Developer', 'Next.js Developer',
+    'TypeScript Developer', 'UI Developer', 'React.js 18', 'Next.js 14',
+    'Core Web Vitals', 'Frontend Engineer', 'SDE2', 'Noida', 'India', 'Portfolio',
+    'react-mobile-share', 'NPM Package', 'Vue.js Developer',
   ],
   authors: [{ name: 'Ayushi Gothi' }],
   creator: 'Ayushi Gothi',
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    title: 'Ayushi Gothi — Frontend Developer & React Specialist',
+    title: 'Ayushi Gothi — Senior Frontend Developer',
     description:
-      '4.5+ years building fast, scalable React applications. Author of react-mobile-share NPM package.',
+      '5+ years building fast, scalable React.js & Next.js applications. Core Web Vitals optimizer & open-source NPM author.',
     siteName: 'Ayushi Gothi Portfolio',
-    images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'Ayushi Gothi — Frontend Developer' }],
+    images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'Ayushi Gothi — Senior Frontend Developer' }],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Ayushi Gothi — Frontend Developer',
-    description: '4.5+ years building fast, scalable React applications.',
+    title: 'Ayushi Gothi — Senior Frontend Developer',
+    description: '5+ years building fast, scalable React.js & Next.js applications.',
     images: ['/og-image.png'],
   },
   robots: { index: true, follow: true },

@@ -74,11 +74,11 @@ export function Hero() {
           {/* Role */}
           <motion.div variants={itemVariants} className="mb-6">
             <p className="text-xl sm:text-2xl font-semibold text-text-muted">
-              <span className="text-white">Frontend Developer</span>
+              <span className="text-white">Senior Frontend Developer</span>
               <span className="mx-2 text-accent-500">·</span>
-              <span>React Specialist</span>
+              <span>React.js · Next.js</span>
               <span className="mx-2 text-accent-500">·</span>
-              <span>UI Architect</span>
+              <span>TypeScript</span>
             </p>
           </motion.div>
 
@@ -87,10 +87,11 @@ export function Hero() {
             variants={itemVariants}
             className="text-text-muted text-base sm:text-lg leading-relaxed max-w-2xl mb-10"
           >
-            UI Specialist with <strong className="text-white font-semibold">4.5+ years</strong> of expertise
-            building scalable, high-performance React applications that serve{' '}
-            <strong className="text-white font-semibold">100K+ users</strong>. Open-source contributor &amp;
-            published NPM package author.
+            Senior Frontend Developer with <strong className="text-white font-semibold">5+ years</strong> of expertise
+            building scalable, high-performance React applications. Core Web Vitals optimizer,
+            open-source NPM author, and mentor who levelled up{' '}
+            <strong className="text-white font-semibold">5+ engineers</strong> serving{' '}
+            <strong className="text-white font-semibold">100K+ users</strong>.
           </motion.p>
 
           {/* CTAs */}
@@ -146,9 +147,9 @@ export function Hero() {
             className="grid grid-cols-2 sm:grid-cols-4 gap-6 w-full max-w-2xl"
           >
             {[
-              { value: '4.5+',   label: 'Years Exp.' },
+              { value: '5+',     label: 'Years Exp.' },
               { value: '100K+',  label: 'Users Served' },
-              { value: '3+',     label: 'Apps Delivered' },
+              { value: '40+',    label: 'Components Built' },
               { value: '5+',     label: 'Devs Mentored' },
             ].map(stat => (
               <div key={stat.label} className="flex flex-col items-center gap-1 p-4 rounded-2xl border border-dark-border bg-dark-surface/50">

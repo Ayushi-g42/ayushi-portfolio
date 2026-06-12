@@ -10,7 +10,7 @@ const highlights = [
   { icon: <Briefcase size={18} />, label: 'Current Role', value: 'SDE2 @ Unlink Technology' },
   { icon: <MapPin size={18} />,    label: 'Location',    value: 'Noida, Uttar Pradesh' },
   { icon: <GraduationCap size={18} />, label: 'Education', value: 'MCA — VIT Bhopal' },
-  { icon: <Code2 size={18} />,     label: 'Focus',       value: 'React.js · TypeScript · Next.js' },
+  { icon: <Code2 size={18} />,     label: 'Speciality',  value: 'React.js · Next.js · TypeScript' },
 ]
 
 export function About() {
@@ -45,7 +45,7 @@ export function About() {
                   transition={{ duration: 3, repeat: Infinity, ease: 'easeInOut' }}
                   className="absolute -top-3 -right-3 px-3 py-1.5 rounded-xl glass border border-accent-500/20 text-xs font-semibold text-accent-400"
                 >
-                  4.5+ Years
+                  5+ Years
                 </motion.div>
                 <motion.div
                   animate={{ y: [0, 8, 0] }}
@@ -80,29 +80,31 @@ export function About() {
             <div className="flex flex-col gap-6">
               <div className="space-y-4 text-text-muted leading-relaxed">
                 <p>
-                  I&apos;m a <span className="text-white font-semibold">UI Specialist</span> with over
-                  4.5 years of experience building high-performance, scalable web applications using
-                  React.js, TypeScript, and Next.js. I&apos;m passionate about creating pixel-perfect
-                  interfaces that don&apos;t just look great — they{' '}
-                  <span className="text-white font-semibold">perform</span>.
+                  I&apos;m a <span className="text-white font-semibold">Senior Frontend Developer</span> with
+                  5+ years of experience building high-performance, scalable web applications using
+                  React.js 18, Next.js 14, and TypeScript. I specialize in{' '}
+                  <span className="text-white font-semibold">Core Web Vitals optimization</span>,
+                  reusable component architecture, and end-to-end product delivery.
                 </p>
                 <p>
                   At <span className="text-accent-400 font-semibold">Unlink Technology</span>, I architect
-                  React.js 18 and Next.js applications end-to-end, mentor junior developers, and define
-                  engineering standards. I&apos;ve reduced page load times by{' '}
-                  <span className="text-white font-semibold">25%</span>, boosted app efficiency by{' '}
-                  <span className="text-white font-semibold">35%</span>, and improved UX by{' '}
-                  <span className="text-white font-semibold">50%</span> through careful optimization.
+                  production applications, built a shared component library of{' '}
+                  <span className="text-white font-semibold">40+ UI components</span> adopted across 3 product
+                  teams, improved Lighthouse score by{' '}
+                  <span className="text-white font-semibold">29 points</span>, and eliminated{' '}
+                  <span className="text-white font-semibold">60% unnecessary re-renders</span>.
+                  I also implemented WCAG 2.1 AA accessibility standards reducing issues by 40%.
                 </p>
                 <p>
-                  I also love contributing to the open-source community. I published{' '}
-                  <span className="text-accent-400 font-semibold">react-mobile-share</span> — an NPM package
-                  for native mobile file sharing using the Web Share API — because I believe great tools
-                  should be shared with the world.
+                  I published{' '}
+                  <span className="text-accent-400 font-semibold">react-mobile-share</span> — an open-source
+                  NPM library enabling native mobile file sharing via the Web Share API, complete with
+                  TypeScript types and comprehensive documentation. Downloaded by developers worldwide.
                 </p>
                 <p>
-                  When I&apos;m not writing code, I&apos;m helping other developers level up through
-                  code reviews, pair programming, and knowledge-sharing sessions.
+                  I&apos;m passionate about engineering excellence — mentoring teams, defining standards,
+                  and shipping features that make a measurable difference. 2 of my mentees were promoted
+                  to SDE2 within 12 months.
                 </p>
               </div>
 
