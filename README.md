@@ -1,36 +1,120 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Ayushi Gothi — Frontend Portfolio
 
-## Getting Started
+> Modern, responsive portfolio website built with Next.js 13, TypeScript, Tailwind CSS, and Framer Motion.
 
-First, run the development server:
+## 🚀 Live Demo
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+[ayushigothi.dev](https://ayushigothi.dev) ← Update after deploying
+
+## ✨ Features
+
+- **Next.js 13** App Router with SSG for maximum SEO
+- **TypeScript** throughout — type-safe data layer
+- **Tailwind CSS** — design system tokens and utilities
+- **Framer Motion** — scroll reveals, stagger animations, spring physics
+- **Dark / Light mode** — via next-themes, dark default
+- **Sticky Navbar** — active section highlighting via IntersectionObserver
+- **Scroll progress bar** — spring-animated at top of viewport
+- **Mobile-first** responsive design
+- **Accessibility** — focus styles, aria labels, reduced-motion support
+- **SEO** — metadata API, JSON-LD structured data, OG image
+
+## 🏗️ Tech Stack
+
+| Layer       | Technology              |
+|-------------|-------------------------|
+| Framework   | Next.js 13 (App Router) |
+| Language    | TypeScript              |
+| Styling     | Tailwind CSS v3         |
+| Animations  | Framer Motion           |
+| Icons       | Lucide React            |
+| Dark Mode   | next-themes             |
+| Deployment  | Vercel                  |
+
+## 📁 Project Structure
+
+```
+src/
+├── app/
+│   ├── layout.tsx       # Root layout + SEO metadata
+│   ├── page.tsx         # Home page (all sections)
+│   └── globals.css      # Design tokens + base styles
+├── components/
+│   ├── layout/          # Navbar, Footer
+│   ├── sections/        # Hero, About, Skills, Experience, Projects, TechStack, Achievements, Contact
+│   ├── ui/              # ScrollReveal, SectionHeading, Badge, ScrollProgress
+│   └── providers/       # ThemeProvider
+├── data/
+│   ├── resume.ts        # All personal data (typed)
+│   ├── projects.ts      # Project details
+│   └── navigation.ts    # Nav links
+├── hooks/               # Custom React hooks
+└── lib/
+    └── utils.ts         # cn() utility
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🛠️ Local Development
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+# Install dependencies
+npm install
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+# Start dev server
+npm run dev
 
-## Learn More
+# Open in browser
+open http://localhost:3000
+```
 
-To learn more about Next.js, take a look at the following resources:
+## 🚢 Deploy to Vercel
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Option 1: Vercel CLI (Fastest)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+```bash
+# Install Vercel CLI
+npm i -g vercel
 
-## Deploy on Vercel
+# Login
+vercel login
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+# Deploy (from project root)
+vercel
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+# For production
+vercel --prod
+```
+
+### Option 2: Vercel Dashboard
+
+1. Push this repository to GitHub
+2. Go to [vercel.com](https://vercel.com) → New Project
+3. Import your GitHub repository
+4. Framework: **Next.js** (auto-detected)
+5. Click **Deploy** — done!
+
+### Option 3: One-click Deploy
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new)
+
+## 📝 Customization
+
+All personal data lives in `src/data/`:
+
+- **`resume.ts`** — Update `personal`, `experiences`, `skillCategories`, `techStack`, `achievements`
+- **`projects.ts`** — Add or update your projects
+- **`navigation.ts`** — Modify nav links
+
+To add your resume PDF:
+```
+public/resume.pdf  ← Place your PDF here
+```
+
+To update the color palette, edit `tailwind.config.ts` → `colors.accent`.
+
+## 📄 License
+
+MIT — feel free to use this as a template for your own portfolio.
+
+---
+
+Built with ❤️ by [Ayushi Gothi](https://www.linkedin.com/in/ayushi-gothi-a739a91a2)
