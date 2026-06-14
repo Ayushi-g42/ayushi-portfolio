@@ -108,7 +108,7 @@ export function Hero() {
 
             <motion.a
               href={personal.resume}
-              download
+              download={personal.resumeFileName}
               whileHover={{ scale: 1.04 }}
               whileTap={{ scale: 0.97 }}
               className="px-7 py-3.5 rounded-2xl border border-accent-500/30 text-text-primary hover:border-accent-500 hover:bg-accent-500/5 font-semibold text-sm transition-all flex items-center gap-2"

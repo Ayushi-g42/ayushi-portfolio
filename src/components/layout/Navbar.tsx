@@ -125,7 +125,7 @@ export function Navbar() {
             {/* Hire Me / Resume */}
             <motion.a
               href={personal.resume}
-              download
+              download={personal.resumeFileName}
               whileHover={{ scale: 1.03 }}
               whileTap={{ scale: 0.97 }}
               className="hidden sm:flex items-center gap-1.5 px-4 py-2 rounded-xl bg-accent-gradient text-white text-sm font-semibold shadow-glow-sm hover:shadow-glow-md transition-shadow"
@@ -203,7 +203,7 @@ export function Navbar() {
               <div className="p-5 border-t border-dark-border">
                 <a
                   href={personal.resume}
-                  download
+                  download={personal.resumeFileName}
                   className="flex items-center justify-center gap-2 w-full py-3 rounded-xl bg-accent-gradient text-white text-sm font-semibold shadow-glow-sm"
                   onClick={() => setMobileOpen(false)}
                 >
