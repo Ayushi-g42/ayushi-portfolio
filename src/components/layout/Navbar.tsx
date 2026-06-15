@@ -57,7 +57,7 @@ export function Navbar() {
         className={cn(
           'fixed top-0 inset-x-0 z-50 transition-all duration-300',
           scrolled
-            ? 'glass py-3'
+            ? 'glass dark:glass py-3'
             : 'bg-transparent py-5'
         )}
       >
@@ -90,8 +90,8 @@ export function Navbar() {
                   className={cn(
                     'relative px-3 py-1.5 text-sm font-medium rounded-lg transition-colors duration-200',
                     isActive
-                      ? 'text-accent-500 dark:text-accent-400'
-                      : 'text-slate-600 dark:text-text-muted hover:text-slate-900 dark:hover:text-white'
+                      ? 'text-accent-400'
+                      : 'text-text-muted hover:text-white'
                   )}
                   aria-current={isActive ? 'page' : undefined}
                 >
@@ -115,7 +115,7 @@ export function Navbar() {
               <motion.button
                 whileTap={{ scale: 0.9 }}
                 onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
-                className="w-9 h-9 rounded-xl flex items-center justify-center text-slate-500 dark:text-text-muted hover:text-slate-900 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-dark-surface2 transition-colors"
+                className="w-9 h-9 rounded-xl flex items-center justify-center text-text-muted hover:text-white hover:bg-dark-surface2 transition-colors"
                 aria-label="Toggle theme"
               >
                 {theme === 'dark' ? <Sun size={18} /> : <Moon size={18} />}
@@ -136,7 +136,7 @@ export function Navbar() {
 
             {/* Mobile Menu Toggle */}
             <button
-              className="lg:hidden w-9 h-9 rounded-xl flex items-center justify-center text-slate-500 dark:text-text-muted hover:text-slate-900 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-dark-surface2 transition-colors"
+              className="lg:hidden w-9 h-9 rounded-xl flex items-center justify-center text-text-muted hover:text-white hover:bg-dark-surface2 transition-colors"
               onClick={() => setMobileOpen(o => !o)}
               aria-label={mobileOpen ? 'Close menu' : 'Open menu'}
               aria-expanded={mobileOpen}
@@ -163,13 +163,13 @@ export function Navbar() {
               animate={{ x: 0 }}
               exit={{ x: '100%' }}
               transition={{ type: 'spring', damping: 30, stiffness: 300 }}
-              className="fixed right-0 top-0 bottom-0 z-50 w-72 glass border-l border-slate-200 dark:border-dark-border flex flex-col lg:hidden"
+              className="fixed right-0 top-0 bottom-0 z-50 w-72 glass border-l border-dark-border flex flex-col lg:hidden"
             >
-              <div className="flex items-center justify-between p-5 border-b border-slate-200 dark:border-dark-border">
-                <span className="font-semibold text-slate-900 dark:text-text-primary">Navigation</span>
+              <div className="flex items-center justify-between p-5 border-b border-dark-border">
+                <span className="font-semibold text-text-primary">Navigation</span>
                 <button
                   onClick={() => setMobileOpen(false)}
-                  className="w-8 h-8 rounded-lg flex items-center justify-center text-slate-500 dark:text-text-muted hover:text-slate-900 dark:hover:text-white transition-colors"
+                  className="w-8 h-8 rounded-lg flex items-center justify-center text-text-muted hover:text-white transition-colors"
                 >
                   <X size={18} />
                 </button>
@@ -188,8 +188,8 @@ export function Navbar() {
                       className={cn(
                         'flex items-center gap-3 px-4 py-3 rounded-xl text-sm font-medium text-left transition-all',
                         isActive
-                          ? 'bg-accent-500/10 text-accent-500 dark:text-accent-400 border border-accent-500/20'
-                          : 'text-slate-600 dark:text-text-muted hover:text-slate-900 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-dark-surface2'
+                          ? 'bg-accent-500/10 text-accent-400 border border-accent-500/20'
+                          : 'text-text-muted hover:text-white hover:bg-dark-surface2'
                       )}
                     >
                       {link.label}
@@ -200,7 +200,7 @@ export function Navbar() {
                   )
                 })}
               </nav>
-              <div className="p-5 border-t border-slate-200 dark:border-dark-border">
+              <div className="p-5 border-t border-dark-border">
                 <a
                   href={personal.resume}
                   download={personal.resumeFileName}

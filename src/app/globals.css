@@ -10,38 +10,24 @@
   --font-inter: 'Inter', system-ui, sans-serif;
   --font-jetbrains: 'JetBrains Mono', monospace;
 
-  /* Light mode */
-  --bg:              #F4F6FF;
-  --surface:         #FFFFFF;
-  --surface-2:       #EEF1FD;
-  --surface-3:       #E8ECFA;
-  --border:          #DDE3F0;
-  --border-strong:   #C7D0E8;
-  --text-primary:    #0F172A;
-  --text-muted:      #475569;
-  --text-subtle:     #94A3B8;
-  --accent:          #6366F1;
-  --accent-glow:     rgba(99, 102, 241, 0.12);
-  --shadow-card:     0 2px 16px rgba(99, 102, 241, 0.08), 0 1px 4px rgba(0,0,0,0.06);
-  --shadow-hover:    0 8px 32px rgba(99, 102, 241, 0.16), 0 2px 8px rgba(0,0,0,0.08);
-  --shadow-glow:     0 0 24px rgba(99, 102, 241, 0.20);
+  /* Light mode defaults */
+  --bg:           #F8FAFF;
+  --surface:      #FFFFFF;
+  --surface-2:    #F1F5FE;
+  --border:       #E2E8F0;
+  --text-primary: #0F172A;
+  --text-muted:   #64748B;
+  --accent:       #6366F1;
 }
 
 .dark {
-  --bg:              #080B14;
-  --surface:         #0D1117;
-  --surface-2:       #161B27;
-  --surface-3:       #1A2035;
-  --border:          #1E2A3A;
-  --border-strong:   #2A3A50;
-  --text-primary:    #F0F4FF;
-  --text-muted:      #8892A4;
-  --text-subtle:     #4B5568;
-  --accent:          #818CF8;
-  --accent-glow:     rgba(99, 102, 241, 0.15);
-  --shadow-card:     0 4px 24px rgba(0, 0, 0, 0.4);
-  --shadow-hover:    0 8px 40px rgba(0, 0, 0, 0.5);
-  --shadow-glow:     0 0 32px rgba(99, 102, 241, 0.30);
+  --bg:           #080B14;
+  --surface:      #0D1117;
+  --surface-2:    #161B27;
+  --border:       #1E2A3A;
+  --text-primary: #F0F4FF;
+  --text-muted:   #8892A4;
+  --accent:       #818CF8;
 }
 
 /* ── Base Reset ───────────────────────────────────────── */
@@ -69,11 +55,7 @@ body {
 
 /* ── Selection ────────────────────────────────────────── */
 ::selection {
-  background: rgba(99, 102, 241, 0.2);
-  color: #6366F1;
-}
-.dark ::selection {
-  background: rgba(99, 102, 241, 0.3);
+  background: rgba(99, 102, 241, 0.25);
   color: #F0F4FF;
 }
 
@@ -90,65 +72,22 @@ body {
   border-radius: 4px;
 }
 
-/* ═══════════════════════════════════════════════════════
-   THEME-AWARE UTILITY CLASSES
-   These switch automatically with .dark on <html>
-   ═══════════════════════════════════════════════════════ */
-
-/* ── Theme Card ───────────────────────────────────────── */
-.theme-card {
-  background: var(--surface);
-  border-color: var(--border);
-  box-shadow: var(--shadow-card);
-  transition: box-shadow 0.3s ease, transform 0.3s ease, background 0.3s ease;
-}
-.theme-card:hover {
-  box-shadow: var(--shadow-hover);
-}
-
-/* ── Section Background Alt ───────────────────────────── */
-.section-alt {
-  background: var(--surface-2);
-}
-
-/* ── Glass Effect (Theme-aware) ──────────────────────── */
+/* ── Glass Effect ─────────────────────────────────────── */
 .glass {
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
+  background: rgba(13, 17, 23, 0.7);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(30, 42, 58, 0.6);
 }
 
-/* Light mode glass */
-.glass {
-  background: rgba(255, 255, 255, 0.85);
-  border: 1px solid rgba(221, 227, 240, 0.8);
-  box-shadow: 0 4px 24px rgba(99, 102, 241, 0.08);
+.glass-light {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(226, 232, 240, 0.6);
 }
 
-/* Dark mode glass */
-.dark .glass {
-  background: rgba(13, 17, 23, 0.85);
-  border: 1px solid rgba(30, 42, 58, 0.7);
-  box-shadow: none;
-}
-
-/* ── Input/Surface ────────────────────────────────────── */
-.theme-surface {
-  background: var(--surface);
-  color: var(--text-primary);
-}
-
-.theme-border {
-  border-color: var(--border);
-}
-
-/* ── Text ─────────────────────────────────────────────── */
-.theme-text       { color: var(--text-primary); }
-.theme-text-muted { color: var(--text-muted); }
-.theme-text-sub   { color: var(--text-subtle); }
-
-/* ═══════════════════════════════════════════════════════
-   GRADIENT TEXT
-   ═══════════════════════════════════════════════════════ */
+/* ── Gradient Text ────────────────────────────────────── */
 .gradient-text {
   background: linear-gradient(135deg, #6366F1 0%, #8B5CF6 50%, #A78BFA 100%);
   -webkit-background-clip: text;
@@ -163,9 +102,7 @@ body {
   background-clip: text;
 }
 
-/* ═══════════════════════════════════════════════════════
-   LAYOUT
-   ═══════════════════════════════════════════════════════ */
+/* ── Section Base ─────────────────────────────────────── */
 .section {
   padding: 6rem 0;
 }
@@ -174,6 +111,7 @@ body {
   .section { padding: 4rem 0; }
 }
 
+/* ── Container ────────────────────────────────────────── */
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -184,11 +122,18 @@ body {
   .container { padding: 0 2.5rem; }
 }
 
-/* ═══════════════════════════════════════════════════════
-   DECORATIVE
-   ═══════════════════════════════════════════════════════ */
+/* ── Noise texture overlay ─────────────────────────────── */
+.noise::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");
+  pointer-events: none;
+  z-index: 0;
+  opacity: 0.04;
+}
 
-/* Background orbs */
+/* ── Animated gradient orb ────────────────────────────── */
 .orb {
   position: absolute;
   border-radius: 50%;
@@ -197,38 +142,12 @@ body {
   pointer-events: none;
 }
 
-/* Hero background — light & dark */
-.hero-bg {
-  background: linear-gradient(160deg, #F4F6FF 0%, #FFFFFF 40%, #EEF1FD 100%);
-}
-.dark .hero-bg {
-  background: #080B14;
-}
-
-/* Hero grid pattern */
-.hero-grid {
-  background-image:
-    linear-gradient(rgba(99, 102, 241, 0.06) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(99, 102, 241, 0.06) 1px, transparent 1px);
-  background-size: 60px 60px;
-}
-.dark .hero-grid {
-  background-image:
-    linear-gradient(rgba(99, 102, 241, 0.5) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(99, 102, 241, 0.5) 1px, transparent 1px);
-  background-size: 60px 60px;
-}
-
-/* ── Skill Bar ────────────────────────────────────────── */
+/* ── Skill bar base ───────────────────────────────────── */
 .skill-bar {
   height: 6px;
   border-radius: 3px;
-  background: var(--surface-2);
-  overflow: hidden;
-}
-
-.dark .skill-bar {
   background: rgba(99, 102, 241, 0.12);
+  overflow: hidden;
 }
 
 .skill-bar-fill {
@@ -238,7 +157,17 @@ body {
   transform-origin: left;
 }
 
-/* ── Card Glow (hover accent border) ─────────────────── */
+/* ── Timeline line ────────────────────────────────────── */
+.timeline-line {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: linear-gradient(to bottom, #6366F1, #8B5CF6, transparent);
+}
+
+/* ── Card hover glow ──────────────────────────────────── */
 .card-glow {
   position: relative;
   transition: box-shadow 0.3s ease;
