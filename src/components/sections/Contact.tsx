@@ -65,7 +65,7 @@ export function Contact() {
                   Looking for a Senior Frontend Developer?
                 </h3>
                 <p className="text-sm text-text-muted leading-relaxed">
-                  I bring 4.5+ years of React expertise, a track record of measurable performance
+                  I bring 5 years of React expertise, a track record of measurable performance
                   improvements, and leadership experience mentoring engineering teams. If you&apos;re
                   looking for someone who can both ship production-ready code and elevate your team
                   — let&apos;s talk.

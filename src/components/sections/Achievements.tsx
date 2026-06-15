@@ -13,7 +13,7 @@ export function Achievements() {
           <SectionHeading
             label="Impact"
             title="Numbers That Matter"
-            subtitle="Measurable results from 4.5+ years of building and optimizing at scale."
+            subtitle="Measurable results from 5 years of building and optimizing at scale."
           />
         </ScrollReveal>
 

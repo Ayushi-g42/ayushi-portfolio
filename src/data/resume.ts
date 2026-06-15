@@ -15,7 +15,7 @@ export const personal = {
   portfolio: 'https://ayushi-portfolio.vercel.app',
   resume: '/static/Ayushi_Gothi_Frontend_Developer.pdf',
   resumeFileName: 'Ayushi_Gothi_Frontend_Developer.pdf',
-  bio: `Senior Frontend Developer with 5+ years of experience building scalable, high-performance web applications using React.js 18, Next.js 14, and TypeScript. Proven expertise in Core Web Vitals optimization, reusable component architecture, and end-to-end product delivery. Mentored 5+ developers, defined team-wide engineering standards, and published an open-source NPM package.`,
+  bio: `Senior Frontend Developer with 5 years of experience building scalable, high-performance web applications using React.js 18, Next.js 14, and TypeScript. Proven expertise in Core Web Vitals optimization, reusable component architecture, and end-to-end product delivery. Mentored 5+ developers, defined team-wide engineering standards, and published an open-source NPM package.`,
   shortBio: 'Building fast, scalable, and accessible React applications that serve 100K+ users.',
   yearsOfExperience: 5,
   projectsDelivered: 3,

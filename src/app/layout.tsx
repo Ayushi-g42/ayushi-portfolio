@@ -7,7 +7,7 @@ import { Footer } from '@/components/layout/Footer'
 export const metadata: Metadata = {
   title: 'Ayushi Gothi | Senior Frontend Developer — React.js · Next.js · TypeScript',
   description:
-    'Senior Frontend Developer with 5+ years of experience building scalable, high-performance React.js 18 and Next.js 14 applications. Core Web Vitals optimizer, open-source NPM author (react-mobile-share), and engineering mentor at Unlink Technology.',
+    'Senior Frontend Developer with 5 years of experience building scalable, high-performance React.js 18 and Next.js 14 applications. Core Web Vitals optimizer, open-source NPM author (react-mobile-share), and engineering mentor at Unlink Technology.',
   keywords: [
     'Ayushi Gothi', 'Senior Frontend Developer', 'React Developer', 'Next.js Developer',
     'TypeScript Developer', 'UI Developer', 'React.js 18', 'Next.js 14',
@@ -21,14 +21,14 @@ export const metadata: Metadata = {
     locale: 'en_US',
     title: 'Ayushi Gothi — Senior Frontend Developer',
     description:
-      '5+ years building fast, scalable React.js & Next.js applications. Core Web Vitals optimizer & open-source NPM author.',
+      '5 years building fast, scalable React.js & Next.js applications. Core Web Vitals optimizer & open-source NPM author.',
     siteName: 'Ayushi Gothi Portfolio',
     images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'Ayushi Gothi — Senior Frontend Developer' }],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Ayushi Gothi — Senior Frontend Developer',
-    description: '5+ years building fast, scalable React.js & Next.js applications.',
+    description: '5 years building fast, scalable React.js & Next.js applications.',
     images: ['/og-image.png'],
   },
   robots: { index: true, follow: true },
