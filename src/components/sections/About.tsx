@@ -8,9 +8,9 @@ import { personal, education } from '@/data/resume'
 
 const highlights = [
   { icon: <Briefcase size={18} />, label: 'Current Role', value: 'SDE2 @ Unlink Technology' },
-  { icon: <MapPin size={18} />,    label: 'Location',    value: 'Noida, Uttar Pradesh' },
+  { icon: <MapPin size={18} />, label: 'Location', value: 'Noida, Uttar Pradesh' },
   { icon: <GraduationCap size={18} />, label: 'Education', value: 'MCA — VIT Bhopal' },
-  { icon: <Code2 size={18} />,     label: 'Speciality',  value: 'React.js · Next.js · TypeScript' },
+  { icon: <Code2 size={18} />, label: 'Speciality', value: 'React.js · Next.js · TypeScript' },
 ]
 
 export function About() {
@@ -45,7 +45,7 @@ export function About() {
                   transition={{ duration: 3, repeat: Infinity, ease: 'easeInOut' }}
                   className="absolute -top-3 -right-3 px-3 py-1.5 rounded-xl glass border border-accent-500/20 text-xs font-semibold text-accent-400"
                 >
-                  5+ Years
+                  5 Years
                 </motion.div>
                 <motion.div
                   animate={{ y: [0, 8, 0] }}
@@ -81,7 +81,7 @@ export function About() {
               <div className="space-y-4 text-text-muted leading-relaxed">
                 <p>
                   I&apos;m a <span className="text-white font-semibold">Senior Frontend Developer</span> with
-                  5+ years of experience building high-performance, scalable web applications using
+                  5 years of experience building high-performance, scalable web applications using
                   React.js 18, Next.js 14, and TypeScript. I specialize in{' '}
                   <span className="text-white font-semibold">Core Web Vitals optimization</span>,
                   reusable component architecture, and end-to-end product delivery.

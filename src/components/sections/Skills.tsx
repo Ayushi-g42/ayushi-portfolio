@@ -50,7 +50,7 @@ export function Skills() {
           <SectionHeading
             label="Skills"
             title="My Technical Expertise"
-            subtitle="5+ years of hands-on experience across the modern frontend ecosystem — from React.js 18 to Vue.js, TypeScript, and testing."
+            subtitle="5 years of hands-on experience across the modern frontend ecosystem — from React.js 18 to Vue.js, TypeScript, and testing."
           />
 
         </ScrollReveal>

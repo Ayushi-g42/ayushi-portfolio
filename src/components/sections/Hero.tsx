@@ -11,7 +11,7 @@ const containerVariants: Variants = {
 }
 
 const itemVariants: Variants = {
-  hidden:  { opacity: 0, y: 24 },
+  hidden: { opacity: 0, y: 24 },
   visible: { opacity: 1, y: 0, transition: { duration: 0.7, ease: 'easeOut' } },
 }
 
@@ -87,7 +87,7 @@ export function Hero() {
             variants={itemVariants}
             className="text-text-muted text-base sm:text-lg leading-relaxed max-w-2xl mb-10"
           >
-            Senior Frontend Developer with <strong className="text-white font-semibold">5+ years</strong> of expertise
+            Senior Frontend Developer with <strong className="text-white font-semibold">5 years</strong> of expertise
             building scalable, high-performance React applications. Core Web Vitals optimizer,
             open-source NPM author, and mentor who levelled up{' '}
             <strong className="text-white font-semibold">5+ engineers</strong> serving{' '}
@@ -121,7 +121,7 @@ export function Hero() {
           {/* Social links */}
           <motion.div variants={itemVariants} className="flex items-center gap-3 mb-16">
             {[
-              { href: personal.github,   icon: <GithubIcon size={18} />,   label: 'GitHub',   id: 'hero-github' },
+              { href: personal.github, icon: <GithubIcon size={18} />, label: 'GitHub', id: 'hero-github' },
               { href: personal.linkedin, icon: <LinkedinIcon size={18} />, label: 'LinkedIn', id: 'hero-linkedin' },
               { href: `mailto:${personal.email}`, icon: <Mail size={18} />, label: 'Email', id: 'hero-email' },
             ].map(s => (
@@ -147,10 +147,10 @@ export function Hero() {
             className="grid grid-cols-2 sm:grid-cols-4 gap-6 w-full max-w-2xl"
           >
             {[
-              { value: '5+',     label: 'Years Exp.' },
-              { value: '100K+',  label: 'Users Served' },
-              { value: '40+',    label: 'Components Built' },
-              { value: '5+',     label: 'Devs Mentored' },
+              { value: '5+', label: 'Years Exp.' },
+              { value: '100K+', label: 'Users Served' },
+              { value: '40+', label: 'Components Built' },
+              { value: '5+', label: 'Devs Mentored' },
             ].map(stat => (
               <div key={stat.label} className="flex flex-col items-center gap-1 p-4 rounded-2xl border border-dark-border bg-dark-surface/50">
                 <span className="text-2xl font-bold gradient-text">{stat.value}</span>
