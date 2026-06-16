@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
+// import { Menu, X, Download } from 'lucide-react'
 import { Menu, X, Sun, Moon, Download } from 'lucide-react'
 import { useTheme } from 'next-themes'
 import { navLinks } from '@/data/navigation'
@@ -9,11 +10,11 @@ import { personal } from '@/data/resume'
 import { cn } from '@/lib/utils'
 
 export function Navbar() {
-  const [scrolled, setScrolled]         = useState(false)
-  const [mobileOpen, setMobileOpen]     = useState(false)
+  const [scrolled, setScrolled] = useState(false)
+  const [mobileOpen, setMobileOpen] = useState(false)
   const [activeSection, setActiveSection] = useState('')
-  const [mounted, setMounted]           = useState(false)
-  const { theme, setTheme }             = useTheme()
+  const [mounted, setMounted] = useState(false)
+  const { theme, setTheme } = useTheme()
 
   useEffect(() => { setMounted(true) }, [])
 
@@ -110,17 +111,6 @@ export function Navbar() {
 
           {/* Right actions */}
           <div className="flex items-center gap-2">
-            {/* Theme Toggle */}
-            {mounted && (
-              <motion.button
-                whileTap={{ scale: 0.9 }}
-                onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
-                className="w-9 h-9 rounded-xl flex items-center justify-center text-text-muted hover:text-white hover:bg-dark-surface2 transition-colors"
-                aria-label="Toggle theme"
-              >
-                {theme === 'dark' ? <Sun size={18} /> : <Moon size={18} />}
-              </motion.button>
-            )}
 
             {/* Hire Me / Resume */}
             <motion.a

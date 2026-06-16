@@ -29,9 +29,9 @@ export const projects: Project[] = [
   {
     id: 'warely',
     title: 'Warely — Enterprise Web Platform',
-    description: 'Large-scale enterprise platform with TypeScript strict mode, Firebase OTP Auth, and adaptive layouts across 5+ device form factors.',
+    description: 'Large-scale enterprise platform with TypeScript strict mode, Firebase OTP Auth, and adaptive layouts across device form factors.',
     longDescription:
-      'Architected and delivered a large-scale enterprise platform using TypeScript strict mode — improving code reliability, reducing runtime errors, and enabling safer refactoring across a 50K+ line codebase. Integrated Firebase Authentication with OTP-based mobile verification and multi-factor authentication. Ensured cross-browser compatibility and adaptive responsive layouts across 5+ device form factors, reducing platform-specific defects by 40%.',
+      'Architected and delivered a large-scale enterprise platform using TypeScript strict mode — improving code reliability, reducing runtime errors, and enabling safer refactoring across a 50K+ line codebase. Integrated Firebase Authentication with OTP-based mobile verification and multi-factor authentication. Ensured cross-browser compatibility and adaptive responsive layouts across 5 device form factors, reducing platform-specific defects by 40%.',
     technologies: ['Next.js', 'TypeScript', 'Firebase', 'Material UI', 'REST APIs'],
     tags: ['TypeScript', 'Firebase', 'Enterprise', 'Next.js'],
     featured: true,
